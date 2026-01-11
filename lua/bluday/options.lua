@@ -1,34 +1,34 @@
 local INDENT_WIDTH = 4
 
-local global  = vim.g
-local options = vim.opt
+local g   = vim.g
+local opt = vim.opt
 
 -- General
-options.background    = dark
-options.fileformat    = "unix"
-options.number        = true
-options.swapfile      = false
-options.termguicolors = true
-options.visualbell    = true
-options.wrap          = false
+opt.background    = "dark"
+opt.fileformat    = "unix"
+opt.number        = true
+opt.swapfile      = false
+opt.termguicolors = true
+opt.visualbell    = true
+opt.wrap          = false
 
-options.fillchars:append({ vert = " " })
+opt.fillchars:append({ vert = " " })
 
 -- Spaces versus tabs
-options.expandtab   = true
-options.shiftwidth  = INDENT_WIDTH
-options.softtabstop = INDENT_WIDTH
-options.tabstop     = INDENT_WIDTH
+opt.expandtab   = true
+opt.shiftwidth  = INDENT_WIDTH
+opt.softtabstop = INDENT_WIDTH
+opt.tabstop     = INDENT_WIDTH
 
 -- Disable netrw in favor of `nvim-tree`
-global.loaded_netrw       = 1
-global.loaded_netrwPlugin = 1
+g.loaded_netrw       = 1
+g.loaded_netrwPlugin = 1
 
-global.mapleader      = " "
-global.maplocalleader = "\\"
+g.mapleader      = " "
+g.maplocalleader = "\\"
 
 -- Neovide
-if global.neovide then
-    global.neovide_floating_shadow      = false
-    global.neovide_remember_window_size = true
+if g.neovide then
+    g.neovide_floating_shadow      = false
+    g.neovide_remember_window_size = true
 end
