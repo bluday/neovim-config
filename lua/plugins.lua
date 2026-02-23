@@ -5,7 +5,6 @@ return {
     "nvim-tree/nvim-web-devicons",
 
     -- Themes
-    "projekt0n/github-nvim-theme",
     "nordtheme/vim",
     "Mofiqul/vscode.nvim",
 
